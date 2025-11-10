@@ -1,0 +1,308 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #2b2b2b; /* Darker background for contrast */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Adds consistent space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #cccccc; /* Subtle hover effect */
+}
+
+.logo img {
+  max-height: 50px; /* Keeps logo size consistent */
+}
+
+/* Button */
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit; /* Ensures the text color matches the button */
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('/assets/images/banner4.svg'); /* Background image */
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35); /* Stronger shadow */
+  color: white; /* Text color */
+  height: 250px; /* Banner height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 0 20px; /* Adjust horizontal padding */
+  margin: 0 0 30px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit width for large screens */
+}
+
+.hero-banner {
+  width: 40%; /* Adjust the size of the image */
+  max-height: 200px; /* Ensure the image doesn't overflow */
+}
+
+.hero-content {
+  text-align: center; /* Center text */
+  max-width: 50%; /* Restrict the text content's width */
+}
+
+.hero-content h1 {
+  font-size: 2rem; /* Adjust heading size */
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1rem; /* Adjust paragraph size */
+  opacity: 0.8; /* Slight transparency for text */
+}
+
+.hero-content .btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+}
+
+/* Services Section Layout */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #007bff; /* Primary color */
+  margin-bottom: 0.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Features List */
+.features-list {
+  text-align: left;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #555;
+ 
+}
+
+.features-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Images */
+.service-img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Circles */
+.round {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.primary-round.small {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 123, 255, 0.1);
+  top: -20px;
+  left: -20px;
+}
+
+.primary-round.big {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 123, 255, 0.05);
+  top: -50px;
+  left: -50px;
+}
+
+.secondary-round.small {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 193, 7, 0.1);
+  top: -20px;
+  right: -20px;
+}
+
+.secondary-round.big {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 193, 7, 0.05);
+  top: -50px;
+  right: -50px;
+}
+
+.tertiary-round.small {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(40, 167, 69, 0.1);
+  bottom: -20px;
+  left: -20px;
+}
+
+.tertiary-round.big {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(40, 167, 69, 0.05);
+  bottom: -50px;
+  left: -50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+/* Contact Section */
+.contact-us {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-input {
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+  flex: 1;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  border: none;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: #555;
+}
+
+.search-button i {
+  font-size: 18px;
+}
+
+.search-button:hover {
+  background-color: #f1f1f1;
+}

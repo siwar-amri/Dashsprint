@@ -1,0 +1,48 @@
+<div class="col-xl-13 col-md-13">
+  
+  <div class="card earning-card bg-secondary-dark text-white overflow-hidden">
+    <span class="round secondary-round small"></span>
+    <span class="round secondary-round big"></span>
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <div class="avatar avatar-lg">
+            <i class="text-white ti ti-credit-card f-24"></i>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="table-responsive">
+            <span class="text-white f-34 f-w-500 my-2">
+              Tickets
+              <i class="ti ti-circle-arrow-up-right opacity-50"></i>
+            </span>
+            <table>
+              <thead>
+                <span class="text-white f-14 f-w-500 my-2">        
+                  <tr>
+                    <th style="padding: 3px;">Ticket Type</th>
+                    <th style="padding: 3px;">Issue Priority</th>
+                    <th style="padding: 3px;">Issue State</th>
+                    <th style="padding: 3px;">Assigned Member</th>
+                    <th style="padding: 3px;">Story Points</th>
+                    <th style="padding: 3px;">Project</th>
+                  </tr>
+                </span>
+              </thead>
+              <tbody>
+                <tr *ngFor="let ticket of tickets">
+                  <td style="padding: 12px;">{{ ticket.ticketType }}</td>
+                  <td style="padding: 12px;">{{ ticket.issuePriority }}</td>
+                  <td style="padding: 12px;">{{ ticket.issueState }}</td>
+                  <td style="padding: 12px;">{{ ticket.assignedMember }}</td>
+                  <td style="padding: 12px;">{{ ticket.storyPoints }}</td>
+                  <td style="padding: 12px;">{{ ticket.projectId }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

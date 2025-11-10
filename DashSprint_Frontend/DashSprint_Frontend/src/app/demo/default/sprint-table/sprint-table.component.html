@@ -1,0 +1,47 @@
+<div class="col-xl-13 col-md-13">
+  <div class="card earning-card bg-secondary-dark text-white overflow-hidden">
+    <span class="round secondary-round small"></span>
+    <span class="round secondary-round big"></span>
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <div class="avatar avatar-lg">
+            <i class="text-white ti ti-credit-card f-24"></i>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="table-responsive">
+            <span class="text-white f-34 f-w-500 my-2">
+              Sprints
+              <i class="ti ti-circle-arrow-up-right opacity-50"></i>
+            </span>
+            <table>
+              <thead>
+                <span class="text-white f-14 f-w-500 my-2">        
+                  <tr>
+                    <th style="padding: 3px;">Name</th>
+                    <th style="padding: 3px;">Start Date</th>
+                    <th style="padding: 3px;">End Date</th>
+                    <th style="padding: 3px;">Status</th>
+                  </tr>
+                </span>
+              </thead>
+              <tbody>
+                <tr 
+                *ngFor="let sprint of sprints" 
+                (mouseenter)="onSprintHover(sprint.id)" 
+                (mouseleave)="onSprintHover(null)" 
+                style="cursor: pointer;">
+                <td style="padding: 12px;">{{ sprint.name }}</td>
+                <td style="padding: 12px;">{{ sprint.startDate | date: 'short' }}</td>
+                <td style="padding: 12px;">{{ sprint.endDate | date: 'short' }}</td>
+                <td style="padding: 12px;">{{ sprint.state }}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

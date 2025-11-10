@@ -1,0 +1,40 @@
+.nav-tabs {
+  border-bottom: none !important;
+}
+body.berry-dark .nav-tabs .nav-link,
+body.berry-dark .tab-content {
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.earning-card {
+  .round {
+    &.secondary-round {
+      background: #4527a0;
+    }
+    &.primary-round {
+      background: #1565c0;
+    }
+  }
+}
+
+.total-income-card {
+  .avatar {
+    background: #1565c0;
+  }
+}
+.tickets-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it's above other content */
+  
+  max-width: 60%; /* Adjust based on screen size */
+  max-height: 60%; /* Ensure it fits on the screen */
+  overflow-y: auto; /* Enable scrolling for larger tables */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+

@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row mb-3 align-items-center">
+      <div class="col">
+        <h3 class="mt-2 f-w-600">Sprint Story Points</h3>
+      </div>
+      <div class="col-auto">
+        <select class="form-select" title="Select Time Period">
+          <option value="today">Year</option>
+          <option value="month" selected>Trimester</option>
+          <option value="year">Semester</option>
+        </select>
+      </div>
+    </div>
+<div class="card">
+  <div class="card-body">
+    <apx-chart
+      [series]="chartOptions?.series"
+      [chart]="chartOptions?.chart"
+      [dataLabels]="chartOptions?.dataLabels"
+      [plotOptions]="chartOptions?.plotOptions"
+      [xaxis]="chartOptions?.xaxis"
+      [yaxis]="chartOptions?.yaxis"
+      [colors]="chartOptions?.colors"
+      [responsive]="chartOptions?.responsive"
+      [tooltip]="chartOptions?.tooltip"
+    ></apx-chart>
+  </div>
+</div>
+
+    
+  </div>
+</div>

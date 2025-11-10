@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/dashsprint
+    username: postgres
+    password: SISI*1sisi*1
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.connectiontimeout: 5000
+      mail.smtp.starttls.timeout: 3000
+      mail.smtp.starttls.writetimeout: 3000
+
+jira:
+  base-url: https://siwaramri243.atlassian.net
+
+feign:
+  client:
+    username: siwaramri243@gmail.com
+    api-token: eATATT3xFfGF0Wsy81xdFUuZ0hioaA1pk1lh8G-EvCZbiTzUEj2O97Iwh7V9zLfdziX3S_0xIfKasEu1A19foI2glyjOVCAKOzMVFeEARePYSbgDMSsaUa05jjott-40C01AspPa-PA-3tkt0k717QoQfMLTXElD_vC8SVkOWsbuJqksyJj5mzB0=D3B84751
+    config:
+      jira-client:
+        url: ${jira.base-url}
+
+

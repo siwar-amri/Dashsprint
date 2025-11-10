@@ -1,0 +1,70 @@
+<div class="auth-main">
+  <div class="auth-wrapper v3">
+    <div class="auth-form">
+      <div class="card mt-5">
+        <div class="card-body">
+          <a href="javascript:" class="d-flex justify-content-center mt-3">
+            <img src="assets/images/SprintDashCropped.png" height="75px" width="230px" />
+          </a>
+          <div class="row">
+            <div class="d-flex justify-content-center">
+              <div class="auth-header">
+                <h2 class="text-secondary mt-5"><b>Sign up</b></h2>
+                <p class="fs-4 mt-2">Enter your credentials to continue</p>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn mt-2 btn-light-primary bg-light text-muted" style="width: 100%">
+            <img src="assets/images/authentication/google-icon.svg" />
+            Sign Up With Google
+          </button>
+          <div class="saprator mt-3">
+            <span>or</span>
+          </div>
+          <h5 class="my-4 d-flex justify-content-center">Sign Up with Email address</h5>
+
+          <!-- Wrap the form in a form tag and use ngSubmit -->
+          <form (ngSubmit)="onSignUp()" #signUpForm="ngForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input [(ngModel)]="firstName" name="firstName" type="text" class="form-control" id="floatingFirstName" placeholder="John" required />
+                  <label for="floatingFirstName">First Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input [(ngModel)]="lastName" name="lastName" type="text" class="form-control" id="floatingLastName" placeholder="Doe" required />
+                  <label for="floatingLastName">Last Name</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input [(ngModel)]="email" name="email" type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required />
+              <label for="floatingEmail">Email Address / Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input [(ngModel)]="password" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="customCheckc1" required />
+              <label class="form-check-label" for="customCheckc1">
+                <h5>Agree with <span>Terms & Condition.</span></h5>
+              </label>
+            </div>
+            <div class="d-grid mt-4">
+              <!-- Change this to ngSubmit -->
+              <button type="submit" class="btn btn-secondary p-2" [disabled]="signUpForm.invalid">Sign Up</button>
+            </div>
+          </form>
+          
+          <hr />
+          <h5 class="d-flex justify-content-center">
+            <a href='guest/login'>Already have an account?</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

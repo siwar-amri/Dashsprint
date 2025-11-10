@@ -1,0 +1,190 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #2b2b2b; /* Darker background for contrast */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Adds consistent space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #cccccc; /* Subtle hover effect */
+}
+
+.logo img {
+  max-height: 50px; /* Keeps logo size consistent */
+}
+
+
+/* Button */
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('/assets/images/banner4.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.hero-section .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section .card {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.contact-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #007bff;
+}
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-input {
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+  flex: 1;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  border: none;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: #555;
+}
+
+.search-button i {
+  font-size: 18px;
+}
+
+.search-button:hover {
+  background-color: #f1f1f1;
+}
